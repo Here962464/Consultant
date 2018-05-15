@@ -1,0 +1,396 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html{
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+a{
+	color: #000;
+}
+/*top样式*/
+.top{
+	height: 115px;
+	width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	position: relative;
+}
+.top .logo{
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+}
+.top .logo li{
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.top .logo .sina{
+	width:80px;
+	height: 25px;
+	background: url(../images/sinat.png) no-repeat;
+}
+.top .logo .wechant{
+	width: 80px;
+	height: 25px;
+	background: url(../images/wechantt.png) no-repeat;
+}
+.top .logo .wechant .code{
+	width: 150px;
+	height: 180px;
+	z-index: 200;
+	position: absolute;
+	top: 25px;
+	left: 55px;
+	display: none;
+	background: url(../images/QR.png) no-repeat;
+}
+.top .logo li div{
+	float: left;
+	margin-left: 15px;
+}
+/*menu样式*/
+.top .menu{
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+.top .menu li{
+	float: left;
+	width: 90px;
+	height: 20px;
+	cursor: pointer;
+	line-height: 20px;
+	text-align: center;
+	margin-left: 5px;
+	position: relative;
+	background: rgb(89,88,87);
+}
+.top .menu li.change{
+	background: rgb(197,45,42);
+}
+.top .menu li a{
+	color: #fff;
+}
+.top .menu li div{
+	display: none;
+	z-index: 100;
+	top: 20px;
+	left: 0;
+	position: absolute;
+}
+.top .menu li div dl dd{
+	background: rgb(89,88,87);
+	width: 90px;
+	height: 20px;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 1px;
+	text-align: center;
+}
+.top .menu li div dl dd.change{
+	background: rgb(197,45,42);
+}
+/*banner样式*/
+.banner{
+	width: 1000px;
+	height: 240px;
+	margin: 0 auto;
+	position: relative;
+}
+.banner .ad{
+	width: 240px;
+	height: 240px;
+	float: left;
+	background: url(../images/ad.png) no-repeat;
+	position: relative;
+}
+.banner .ad img{
+	position: absolute;
+	left: 55px;
+	top: -75px;
+}
+.banner .slideshow{
+	width: 760px;
+	height: 240px;
+	float: right;
+	overflow: hidden;
+	cursor: pointer;
+}
+.banner .slideshow #arrowl{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 710px;
+	top: 100px;
+	background: url(../images/arrowl.png) no-repeat;
+}
+.banner .slideshow #arrowr{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	top: 100px;
+	background: url(../images/arrowr.png) no-repeat;
+}
+.banner .slideshow ul{
+	width: 3800px;
+	height: 240px;
+}
+.banner .slideshow ul li{
+	width: 760px;
+	height: 240px;
+	float: left;
+}
+.banner .slideshow ul li img{
+	width: 760px;
+	height: 240px;
+}
+/*content样式*/
+.content{
+	margin: 5px auto;
+	width: 1000px;
+	height: 365px;
+	border-bottom: 1px solid rgb(222,222,220);
+}
+/*麦格咨询*/
+.content .consult{
+	width: 320px;
+	height: 180px;
+	margin-right: 15px;
+	float: left;
+	background: url(../images/topline.png) no-repeat;
+}
+.content .consult ul,.content .teachers div,.content .videos div,.content .shares div{
+	width: 320px;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 10px;
+	border-bottom: 3px solid rgb(189,189,189);
+	border-top: 1px solid rgb(222,35,26);
+}
+.content .consult div{
+	width: 320px;
+	height: 90px;
+	position: relative;
+	background: url(../images/consult.png) no-repeat;
+}
+.content .consult div p{
+	width: 150px;
+	height: 90px;
+	display: inline-block;
+	right: 0;
+	top: 10px;
+	position: absolute;
+}
+.content .consult ol{
+	width: 300px;
+	height: 40px;
+	overflow: hidden;
+	margin-top: 5px;
+	padding-left: 20px;
+}
+.content .consult ol li{
+	list-style: circle;
+	line-height: 20px;
+	height: 20px;
+}
+/*导师团队*/
+.content .teachers{
+	width: 320px;
+	height: 180px;
+	margin-right: 15px;
+	float: left;
+	position: relative;
+	background: url(../images/topline.png) no-repeat;
+}
+.content .teachers div ul,.content .videos div ul,.content .shares div ul{
+	top: 0;
+	right: 0;
+	height: 34px;
+	border: none;
+	margin-top: 1px;
+	position: absolute;
+}
+.content .teachers div ul li,.content .videos div ul li,.content .shares div ul li{
+	float: left;
+	height: 30px;
+	cursor: pointer;
+	line-height: 30px;
+	padding: 0px 10px;
+}
+.content .teachers div ul li.change,.content .videos div ul li.change,.content .shares div ul li.change{
+	background: rgb(222,222,220);
+}
+.content .teachers #counselor,.content .teachers #trainer{
+	width: 320px;
+	height: 130px;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	border: none;
+}
+.content .teachers #trainer{
+	display: none;
+}
+.content .teachers #counselor img,.content .teachers #trainer img{
+	width: 135px;
+	height: 130px;
+	float: left;
+}
+.content .teachers #counselor dl,.content .teachers #trainer dl{
+	width: 155px;
+	height: 130px;
+	line-height: 20px;
+	font-size: 12px;
+	cursor: pointer;
+	float: right;
+}
+.content .teachers #counselor dl dt,.content .teachers #trainer dl dt{
+	font-weight: bold;
+}
+/*广告——近期活动*/
+.content .actives{
+	width: 320px;
+	height: 330px;
+	float: right;
+}
+
+/*麦格视频*/
+.content .videos{
+	width: 320px;
+	height: 150px;
+	margin-right: 15px;
+	margin-top: 10px;
+	float: left;
+	position: relative;
+	background: url(../images/topline.png) no-repeat;
+}
+.content .videos #classes,.content .videos #expert{
+	width: 320px;
+	height: 100px;
+	margin-top: 10px;
+	border: none;
+}
+.content .videos #expert{
+	display: none;
+}
+.content .videos #classes img,.content .videos #expert img{
+	width: 150px;
+	height: 100px;
+	float: right;
+}
+.content .videos #classes dl,.content .videos #expert dl{
+	width: 150px;
+	height: 100px;
+	float: left;
+}
+.content .videos #classes dl dd,.content .videos #expert dl dd{
+	line-height: 20px;
+	width: 130px;
+	font-size: 12px;
+	padding-left: 25px;
+	cursor: pointer;
+	background: url(../images/video.png) no-repeat 0 2px;
+}
+/*案例分享*/
+.content .shares{
+	width: 320px;
+	height: 150px;
+	margin-top: 10px;
+	margin-right: 15px;
+	float: left;
+	position: relative;
+	background: url(../images/topline.png) no-repeat;
+}
+.content .shares #spech,.content .shares #manager,.content .shares #information{
+	width: 320px;
+	height: 100px;
+	margin-top: 10px;
+	border: none;
+}
+.content .shares #manager,.content .shares #information{
+	display: none;
+}
+.content .shares #spech dl,.content .shares #manager dl,.content .shares #information dl{
+	width: 320px;
+	height: 100px;
+}
+.content .shares #spech dl dd,.content .shares #manager dl dd,.content .shares #information dl dd{
+	width: 320px;
+	font-size: 12px;
+	line-height: 20px;
+	cursor: pointer;
+	position: relative;
+}
+.content .shares #spech dl dd span,.content .shares #manager dl dd span,.content .shares #information dl dd span{
+	position: absolute;
+	right: 0;
+}
+/*foot样式*/
+.foot{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.foot span{
+	cursor: pointer;	
+}
+.foot .pic{
+	width: 380px;
+	height: 60px;
+	float: left;
+}
+.foot .pic .logob{
+	width: 130px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+	background: url(../images/logob.png) no-repeat;
+}
+.foot .pic .sinab{
+	width: 85px;
+	height: 60px;
+	float: left;
+	margin-right: 15px;
+	background: url(../images/sinab.png) no-repeat 0 7px;
+}
+.foot .pic .wechantb{
+	width: 105px;
+	height: 50px;
+	float: left;
+	background: url(../images/wechantb.png) no-repeat;
+}
+.foot .infor{
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.foot .infor li{
+	float: left;
+	width: 90px;
+	height: 15px;
+	cursor: pointer;
+	line-height: 15px;
+	text-align: center;
+	color: rgb(96,96,96);
+	border-right: 1px solid rgb(96,96,96);
+}
+.foot .infor li.no-margin{
+	width: 150px;
+	height: 15px;
+	cursor: text;
+	border-right: none;
+	margin-right: -15px;
+}
+.foot .copyright{
+	position: absolute;
+	top: 55px;
+	right: 0;
+	color: rgb(96,96,96);
+}

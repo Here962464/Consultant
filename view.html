@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function test(){
+			//只要是在作用域中找到了关键词var，那么这个作用域内所有关于该变量的赋值
+			//都不会影响全局值
+			var a=0;
+			alert(a);
+			a=1;
+		}
+		test();
+		function abc(){
+			//若在函数作用域中找不到关键字var，那么这个变量值就是全局的
+			a=3;
+			alert(a);
+			var a=5;
+		}
+		abc();
+		//alert(a);
+		console.log(window);
+	</script>
+</body>
+</html>
